@@ -38,7 +38,7 @@
             this.txtProductId = new System.Windows.Forms.TextBox();
             this.btnList = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtPoductPrice = new System.Windows.Forms.TextBox();
+            this.txtProductPrice = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtProductStock = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -66,6 +66,7 @@
             this.btnUpdate.TabIndex = 18;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDelete
             // 
@@ -76,6 +77,7 @@
             this.btnDelete.TabIndex = 17;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnAdd
             // 
@@ -86,6 +88,7 @@
             this.btnAdd.TabIndex = 16;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // txtProductName
             // 
@@ -143,12 +146,12 @@
             this.label1.TabIndex = 10;
             this.label1.Text = "Product ID:";
             // 
-            // txtPoductPrice
+            // txtProductPrice
             // 
-            this.txtPoductPrice.Location = new System.Drawing.Point(148, 91);
-            this.txtPoductPrice.Name = "txtPoductPrice";
-            this.txtPoductPrice.Size = new System.Drawing.Size(176, 22);
-            this.txtPoductPrice.TabIndex = 21;
+            this.txtProductPrice.Location = new System.Drawing.Point(148, 91);
+            this.txtProductPrice.Name = "txtProductPrice";
+            this.txtProductPrice.Size = new System.Drawing.Size(176, 22);
+            this.txtProductPrice.TabIndex = 21;
             // 
             // label3
             // 
@@ -204,7 +207,7 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtProductStock);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.txtPoductPrice);
+            this.Controls.Add(this.txtProductPrice);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.btnUpdate);
@@ -236,7 +239,7 @@
         private System.Windows.Forms.TextBox txtProductId;
         private System.Windows.Forms.Button btnList;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtPoductPrice;
+        private System.Windows.Forms.TextBox txtProductPrice;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtProductStock;
         private System.Windows.Forms.Label label4;
