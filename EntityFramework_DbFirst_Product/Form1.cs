@@ -37,5 +37,14 @@ namespace EntityFramework_DbFirst_Product
             db.TblCategory.Add(tblCategory);
             db.SaveChanges();
         }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            int id = Convert.ToInt32(txtCategoryId.Text);  
+            var value = db.TblCategory.Find(id);
+            db.TblCategory.Remove(value);
+            db.SaveChanges();
+            CategoryList();
+        }
     }
 }
