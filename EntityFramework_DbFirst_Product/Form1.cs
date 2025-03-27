@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace EntityFramework_DbFirst_Product
 {
     public partial class Form1 : Form
@@ -27,6 +28,14 @@ namespace EntityFramework_DbFirst_Product
         private void btnList_Click(object sender, EventArgs e)
         {
             CategoryList();
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            TblCategory tblCategory = new TblCategory();
+            tblCategory.CategoryName = txtCategoryName.Text;
+            db.TblCategory.Add(tblCategory);
+            db.SaveChanges();
         }
     }
 }
