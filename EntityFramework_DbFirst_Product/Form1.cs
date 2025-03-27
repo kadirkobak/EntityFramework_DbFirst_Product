@@ -46,5 +46,12 @@ namespace EntityFramework_DbFirst_Product
             db.SaveChanges();
             CategoryList();
         }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            int id = Convert.ToInt32(txtCategoryId.Text);
+            var value = db.TblCategory.Find(id);
+            value.CategoryName = txtCategoryName.Text;
+        }
     }
 }
