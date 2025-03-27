@@ -61,5 +61,19 @@ namespace EntityFramework_DbFirst_Product
             db.SaveChanges();
             ProductList();
         }
+
+        private void FrmProduct_Load(object sender, EventArgs e)
+        {
+            var values = db.TblCategory.ToList();
+            cmbProductCategory.DisplayMember = "CategoryName";
+            cmbProductCategory.ValueMember = "CategoryId";
+            cmbProductCategory.DataSource = values;
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            var values = db.TblProduct.Where(x => x.ProductName == txtProductName.Text).ToList();
+            dataGridView1.DataSource = values;
+        }
     }
 }
