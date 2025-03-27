@@ -16,5 +16,18 @@ namespace EntityFramework_DbFirst_Product
         {
             InitializeComponent();
         }
+
+        EntityDbFirstEntities db = new EntityDbFirstEntities();
+
+        void ProductList()
+        {
+            dataGridView1.DataSource = db.TblProduct.ToList();
+        }
+
+
+        private void btnList_Click(object sender, EventArgs e)
+        {
+            ProductList();
+        }
     }
 }
