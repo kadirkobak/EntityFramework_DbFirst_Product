@@ -1,6 +1,6 @@
 ﻿namespace EntityFramework_DbFirst_Product
 {
-    partial class Form1
+    partial class FrmCategory
     {
         /// <summary>
         /// Required designer variable.
@@ -140,7 +140,7 @@
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // FrmCategory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -155,7 +155,7 @@
             this.Controls.Add(this.txtCategoryId);
             this.Controls.Add(this.btnList);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Name = "FrmCategory";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Category Operations";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
