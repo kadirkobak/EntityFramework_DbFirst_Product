@@ -10,11 +10,23 @@ using System.Windows.Forms;
 
 namespace EntityFramework_DbFirst_Product
 {
-    public partial class Form1: Form
+    public partial class Form1 : Form
     {
         public Form1()
         {
             InitializeComponent();
+        }
+
+        EntityDbFirstEntities db = new EntityDbFirstEntities();
+
+        void CategoryList()
+        {
+            dataGridView1.DataSource = db.TblCategory.ToList();
+        }
+
+        private void btnList_Click(object sender, EventArgs e)
+        {
+            CategoryList();
         }
     }
 }
