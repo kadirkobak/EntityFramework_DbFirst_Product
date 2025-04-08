@@ -67,7 +67,7 @@ namespace EntityFramework_DbFirst_Product
             var values = db.TblCategory.ToList();
             cmbProductCategory.DisplayMember = "CategoryName";
             cmbProductCategory.ValueMember = "CategoryId";
-            cmbProductCategory.DataSource = values;
+            cmbProductCategory.DataSource = values; //try
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
